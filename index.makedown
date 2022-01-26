@@ -1,6 +1,0 @@
-git clone '厂库名'
-git add index.js
-git commit -m 'index.js'
-git push
-git pull
-git checkout index %将删除的文件找回
