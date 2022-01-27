@@ -57,6 +57,12 @@ __*粗斜体*__
 [![git工作流](./../pictures/git工作流.png "Shiprock")](https://markdown.com.cn)
 
 ## 代码
+### 代码块
+```
+code
+
+```
+
 ### 将单词或者短语表示为代码
 
 At the command prompt, type `nano`.
