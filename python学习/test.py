@@ -1,3 +1,2 @@
-a = int(input())
-b = int(input())
-print(a+b)
+a = 2100%400
+print(a)
