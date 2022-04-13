@@ -29,15 +29,6 @@ test_ids = os.listdir(TEST_PATH)
 train_y_ids = os.listdir(TRAIN_PATH_Y)
 test_y_ids = os.listdir(TEST_PATH_Y)
 
-# 对训练集、测试集和相应的标签打乱顺序（用相同的随机种子）
-# np.random.seed(116)
-# np.random.shuffle(train_ids)
-# np.random.seed(116)
-# np.random.shuffle(train_y_ids)
-# np.random.seed(116)
-# np.random.shuffle(test_ids)
-# np.random.seed(116)
-# np.random.shuffle(test_y_ids)
 
 
 # 构造训练集和标签
@@ -190,8 +181,6 @@ optimizer = torch.optim.Adam(model.parameters(),lr=1e-3)
 def evaluate_accuracy(data_iter, net):
   acc_sum, n = 0.0, 0
   for x, y in data_iter:
-    
-    
     acc_sum += (net(x).argmax(dim=1) == y).float().sum().item()
     n += y.shape[0]
   return acc_sum / n
